@@ -15,7 +15,13 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #fafafc;
-}`;
+}
+
+button {
+  cursor: pointer;
+}
+
+`;
 
 const theme = {
   colors: {

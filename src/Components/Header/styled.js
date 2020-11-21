@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-// font-family: 'Baloo Tamma 2', cursive;
-// font-family: 'Poppins', sans-serif;
-
 export const StyledHeader = styled.header`
   background-color: ${({ theme, color }) => theme.colors[color]};
   display: flex;
@@ -24,6 +21,7 @@ export const StyledLogo = styled.a`
   font-size: 30px;
   margin-left: 15px;
   flex: 1;
+  cursor: default;
 `;
 
 export const StyledForm = styled.form`
@@ -47,6 +45,7 @@ export const StyledSearch = styled.button`
   border: none;
   outline: none;
   background-color: #d9d9d9;
+  transition: all 0.2s;
 
   &:hover {
     background-color: #7d7d7d;
@@ -61,6 +60,7 @@ export const StyledAvatar = styled.button`
   border: none;
   background-color: #d9d9d9;
   margin-right: 5px;
+  transition: all 0.2s;
 
   &:hover {
     background-color: #7d7d7d;

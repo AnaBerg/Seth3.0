@@ -5,50 +5,40 @@ export const StyledGrid = styled.div`
   grid-template-columns: 320px 1fr;
 `;
 
-export const StyledContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+export const StyledContentWrapper = styled.section`
+  margin: 20px;
 `;
 
-export const StyledInfoWrapper = styled.section`
+export const StyledHeader = styled.header`
   display: flex;
-  flex-direction: row;
-`;
-
-export const StyledCallCard = styled.div`
-  display: flex;
-  background-color: ${({ theme, color }) => theme.colors[color]};
-  margin: 10px;
-  display: flex;
-  justify-content: center;
+  background-color: grey;
+  height: 50px;
   align-items: center;
-  border-radius: 10px;
 `;
 
-export const StyledCardInfo = styled.div`
-  background-color: #fafafc;
-  height: 60px;
-  width: 100px;
-  margin: 3px;
-  border-radius: 10px;
+export const StyledForm = styled.form`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+`;
+
+export const StyledInput = styled.input`
+  height: 25px;
+  width: 100px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  border: none;
   padding: 5px;
 `;
 
-export const StyledNumber = styled.h3`
-  font-family: 'Baloo Tamma 2', cursive;
-`;
+export const StyledSearch = styled.button`
+  height: 25px;
+  width: 30px;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  outline: none;
+  background-color: #d9d9d9;
+  transition: all 0.2s;
 
-export const StyledText = styled.p`
-  font-family: 'Baloo Tamma 2', cursive;
-`;
-
-export const StyledActionsWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
+  &:hover {
+    background-color: #7d7d7d;
+  }
 `;

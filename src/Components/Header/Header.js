@@ -18,8 +18,8 @@ import {
 function Header() {
   return (
     <StyledHeader color="primary">
-      <StyledLogo color="textPrimary" font="title" href="#">
-        LIVTI
+      <StyledLogo color="textPrimary" font="title" href="">
+        SETH
       </StyledLogo>
       <StyledForm action="">
         <StyledInput type="text" />
