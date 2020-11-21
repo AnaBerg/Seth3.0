@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+
+import Routes from './Routes';
+
+const GlobalStyles = createGlobalStyle`
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #fafafc;
+}`;
+
+const theme = {
+  colors: {
+    textPrimary: '#fafafc',
+    primary: '#ff9023',
+    secondary: '#b06612',
+    callCardBlue: '#31708f',
+    callCardGreen: '#5cb85c',
+    callCardYellow: '#ffff4f',
+    callCardRed: '#d9534f;',
+  },
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <Routes />
+    </ThemeProvider>
   );
 }
 
