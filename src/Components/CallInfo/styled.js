@@ -3,9 +3,10 @@ import styled from 'styled-components';
 export const StyledContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 `;
 
-export const StyledInfoWrapper = styled.section`
+export const StyledInfoWrapper = styled.div`
   display: flex;
   flex-direction: row;
 `;
