@@ -14,7 +14,7 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  background-color: #fafafc;
+  background-color: #e8e8e8;
 }
 
 button {

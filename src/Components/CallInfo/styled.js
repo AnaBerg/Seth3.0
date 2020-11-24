@@ -45,7 +45,7 @@ export const StyledActionsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-self: center;
+  padding-left: 10px;
 `;
 
 export const StyledLink = styled.a`

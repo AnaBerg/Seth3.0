@@ -6,9 +6,12 @@ import {
   StyledGrid,
   StyledContentWrapper,
   StyledHeader,
+  StyledWarpper,
+  StyledText,
   StyledForm,
   StyledInput,
   StyledSearch,
+  StyledLine,
 } from './styled';
 
 import Header from '../Header';
@@ -23,17 +26,20 @@ function LandingPage() {
         <StyledContentWrapper>
           <div>
             <StyledHeader>
-              <div>
+              <StyledWarpper>
                 <PersonOutline color="#ff9023" width={24} height={24} />
-                <p>Meus Chamados</p>
-              </div>
+                <StyledText>Meus Chamados</StyledText>
+              </StyledWarpper>
               <StyledForm action="">
                 <StyledInput type="text" />
                 <StyledSearch type="submit">
                   <SearchOutline color="#fafafc" width={18} height={18} />
                 </StyledSearch>
               </StyledForm>
+              <StyledLine />
             </StyledHeader>
+            <StyledLine />
+            <section></section>
           </div>
         </StyledContentWrapper>
       </StyledGrid>
