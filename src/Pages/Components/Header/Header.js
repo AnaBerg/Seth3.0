@@ -3,6 +3,7 @@ import {
   MenuOutline,
   SearchOutline,
   PersonOutline,
+  PhoneCallOutline,
 } from '@styled-icons/evaicons-outline';
 
 import {
@@ -13,6 +14,7 @@ import {
   StyledMenu,
   StyledInput,
   StyledSearch,
+  StyledPortalButton,
 } from './styled';
 
 function Header() {

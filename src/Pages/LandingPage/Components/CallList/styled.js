@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 
-export const StyledGrid = styled.div`
-  display: grid;
-  grid-template-columns: 320px 1fr;
-`;
-
-export const StyledContentWrapper = styled.div`
-  margin: 20px;
+export const StyledTableWrapper = styled.div`
+  background-color: #fafafc;
+  height: 400px;
+  width: 1000px;
+  border-radius: 0 0 5px 5px;
+  overflow-y: auto;
+  margin-bottom: 20px;
 `;
 
 export const StyledHeader = styled.header`
   display: flex;
   background-color: #fafafc;
   height: 50px;
+  width: 1000px;
   align-items: center;
   border-radius: 5px 5px 0 0;
 `;
@@ -48,6 +49,10 @@ export const StyledInput = styled.input`
   border: none;
   padding: 5px;
   border: 0.5px solid #d9d9d9;
+
+  &:focus {
+    border: 1px solid black;
+  }
 `;
 
 export const StyledSearch = styled.button`
@@ -62,20 +67,18 @@ export const StyledSearch = styled.button`
   &:hover {
     background-color: #7d7d7d;
   }
+
+  &:focus {
+    background-color: #7d7d7d;
+  }
 `;
 
 export const StyledLine = styled.hr`
   height: 12px;
+  width: 1000px;
   border: 0;
-  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 12px 12px -12px #00000036;
   background-color: #fafafc;
-`;
-
-export const StyledTableWrapper = styled.div`
-  background-color: #fafafc;
-  height: 400px;
-  width: 100%;
-  border-radius: 0 0 5px 5px;
 `;
 
 export const StyledTable = styled.table`
@@ -84,10 +87,11 @@ export const StyledTable = styled.table`
   display: flex;
   flex-direction: column;
   font-family: 'Baloo Tamma 2', cursive;
-  overflow-y: auto;
 `;
 
-export const StyledTableHeader = styled.tr``;
+export const StyledTableHeader = styled.tr`
+  margin-bottom: 10px;
+`;
 
 export const StyledTicket = styled.th`
   width: 200px;
@@ -122,13 +126,18 @@ export const StyledPriority = styled.th`
 export const StyledButtonCall = styled.button`
   border: none;
   outline: none;
+  height: 30px;
   background-color: #fafafc;
   font-family: 'Baloo Tamma 2', cursive;
   font-size: 16px;
-  transition: all 0.5s;
+  transition: all 0.1s;
 
   &:hover {
-    box-shadow: 0px 0px 10px 5px #00000036;
+    background-image: linear-gradient(to bottom, #fafafc, #d9d9d9);
+  }
+
+  &:focus {
+    background-image: linear-gradient(to bottom, #fafafc, #ff9023);
   }
 `;
 

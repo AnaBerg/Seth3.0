@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StyledHeader = styled.header`
   background-color: ${({ theme, color }) => theme.colors[color]};
   display: flex;
-  width: 100%;
   height: 60px;
   align-items: center;
   box-shadow: 0px 0px 10px 5px #00000036;
@@ -25,7 +24,7 @@ export const StyledLogo = styled.a`
 `;
 
 export const StyledForm = styled.form`
-  margin-right: 80px;
+  margin-right: 40px;
   display: flex;
 `;
 
@@ -36,6 +35,10 @@ export const StyledInput = styled.input`
   border-radius: 10px 0 0 10px;
   border: none;
   padding: 5px;
+
+  &:focus {
+    border: 1px solid black;
+  }
 `;
 
 export const StyledSearch = styled.button`
@@ -48,6 +51,9 @@ export const StyledSearch = styled.button`
   transition: all 0.2s;
 
   &:hover {
+    background-color: #7d7d7d;
+  }
+  &:focus {
     background-color: #7d7d7d;
   }
 `;
@@ -65,6 +71,10 @@ export const StyledAvatar = styled.button`
   &:hover {
     background-color: #7d7d7d;
   }
+
+  &:focus {
+    background-color: #7d7d7d;
+  }
 `;
 
 export const StyledMenu = styled.button`
@@ -75,6 +85,10 @@ export const StyledMenu = styled.button`
   border: none;
 
   &:hover {
+    background-color: ${({ theme, hover }) => theme.colors[hover]};
+  }
+
+  &:focus {
     background-color: ${({ theme, hover }) => theme.colors[hover]};
   }
 `;
