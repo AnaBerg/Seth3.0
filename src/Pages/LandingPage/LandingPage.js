@@ -4,7 +4,7 @@ import { PhoneCallOutline } from '@styled-icons/evaicons-outline';
 
 import { StyledGrid, StyledContentWrapper, StyledPortalButton } from './styled';
 
-import Header from '../Components/Header';
+import Header from '../../Components/Header';
 import CallInfo from './Components/CallInfo';
 import CallList from './Components/CallList';
 

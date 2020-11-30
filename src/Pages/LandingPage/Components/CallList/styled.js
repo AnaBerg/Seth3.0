@@ -75,7 +75,6 @@ export const StyledSearch = styled.button`
 
 export const StyledLine = styled.hr`
   height: 12px;
-  width: 1000px;
   border: 0;
   box-shadow: inset 0 12px 12px -12px #00000036;
   background-color: #fafafc;

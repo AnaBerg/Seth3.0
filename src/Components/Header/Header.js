@@ -14,13 +14,12 @@ import {
   StyledMenu,
   StyledInput,
   StyledSearch,
-  StyledPortalButton,
 } from './styled';
 
 function Header() {
   return (
     <StyledHeader color="primary">
-      <StyledLogo color="textPrimary" font="title" href="">
+      <StyledLogo color="textPrimary" font="title" href="/">
         SETH
       </StyledLogo>
       <StyledForm action="">
