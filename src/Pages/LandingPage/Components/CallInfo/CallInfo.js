@@ -9,6 +9,24 @@ import {
   StyledText,
   StyledActionsWrapper,
   StyledLink,
+  StyledHeader,
+  StyledTableWrapper,
+  StyledLine,
+  StyledTable,
+  StyledTableHeader,
+  StyledTicket,
+  StyledClient,
+  StyledSubject,
+  StyledStatus,
+  StyledPriority,
+  StyledTicketVar,
+  StyledClientVar,
+  StyledSubjectVar,
+  StyledStatusVar,
+  StyledPriorityVar,
+  StyledButtonCall,
+  StyledWarpper,
+  StyledStickyDiv,
 } from './styled';
 
 import {
@@ -60,7 +78,7 @@ function CallInfo() {
         </section>
       </StyledInfoWrapper>
       <StyledActionsWrapper>
-        <StyledLink href="">
+        <StyledLink href="http://192.168.88.41:3000/novo-chamado">
           <ClipboardOutline color="#ff9023" height={35} width={35} />
           Abrir novo chamado
         </StyledLink>
@@ -73,6 +91,38 @@ function CallInfo() {
           Banco de informações
         </StyledLink>
       </StyledActionsWrapper>
+      <StyledStickyDiv>
+        <StyledHeader>
+          <StyledWarpper>
+            <AlertTriangleOutline color="#ff9023" width={24} height={24} />
+            <StyledText>Chamados com Problemas</StyledText>
+          </StyledWarpper>
+        </StyledHeader>
+        <StyledLine />
+
+        <StyledTableWrapper>
+          <StyledTable>
+            <StyledTableHeader>
+              <StyledTicket>Ticket</StyledTicket>
+              <StyledClient>Cliente</StyledClient>
+              <StyledSubject>Assunto</StyledSubject>
+              <StyledStatus>St.</StyledStatus>
+              <StyledPriority>Pr.</StyledPriority>
+            </StyledTableHeader>
+            <tr>
+              <StyledButtonCall>
+                <StyledTicketVar>000000</StyledTicketVar>
+                <StyledClientVar>LIVTI</StyledClientVar>
+                <StyledSubjectVar>Desenvolver</StyledSubjectVar>
+                <StyledStatusVar>
+                  <PlayCircleOutline color="#ff9023" width={18} height={18} />
+                </StyledStatusVar>
+                <StyledPriorityVar>5</StyledPriorityVar>
+              </StyledButtonCall>
+            </tr>
+          </StyledTable>
+        </StyledTableWrapper>
+      </StyledStickyDiv>
     </StyledContentWrapper>
   );
 }

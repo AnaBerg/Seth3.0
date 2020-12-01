@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledHeader = styled.header`
   background-color: ${({ theme, color }) => theme.colors[color]};
   display: flex;
-  width: 100%;
+  justify-content: space-between;
   height: 60px;
   align-items: center;
   box-shadow: 0px 0px 10px 5px #00000036;
@@ -16,16 +16,16 @@ export const StyledHeader = styled.header`
 export const StyledLogo = styled.a`
   text-decoration: none;
   color: ${({ theme, color }) => theme.colors[color]};
-  font-family: 'Baloo Tamma 2', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 30px;
   margin-left: 15px;
-  flex: 1;
-  cursor: default;
+
+  cursor: pointer;
 `;
 
 export const StyledForm = styled.form`
-  margin-right: 80px;
+  margin-right: 40px;
   display: flex;
 `;
 
@@ -36,6 +36,10 @@ export const StyledInput = styled.input`
   border-radius: 10px 0 0 10px;
   border: none;
   padding: 5px;
+
+  &:focus {
+    border: 1px solid black;
+  }
 `;
 
 export const StyledSearch = styled.button`
@@ -48,6 +52,9 @@ export const StyledSearch = styled.button`
   transition: all 0.2s;
 
   &:hover {
+    background-color: #7d7d7d;
+  }
+  &:focus {
     background-color: #7d7d7d;
   }
 `;
@@ -65,6 +72,17 @@ export const StyledAvatar = styled.button`
   &:hover {
     background-color: #7d7d7d;
   }
+
+  &:focus {
+    background-color: #7d7d7d;
+  }
+
+  &:hover div {
+    visibility: visible;
+  }
+  &:focus div {
+    visibility: visible;
+  }
 `;
 
 export const StyledMenu = styled.button`
@@ -77,4 +95,17 @@ export const StyledMenu = styled.button`
   &:hover {
     background-color: ${({ theme, hover }) => theme.colors[hover]};
   }
+
+  &:focus {
+    background-color: ${({ theme, hover }) => theme.colors[hover]};
+  }
+
+  &:focus div {
+    visibility: visible;
+  }
+`;
+
+export const StyledSection = styled.section`
+  display: flex;
+  align-items: center;
 `;
