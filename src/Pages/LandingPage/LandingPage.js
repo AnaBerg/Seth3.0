@@ -10,6 +10,8 @@ import CallList from './Components/CallList';
 import PortalCall from './Components/PortalCall';
 
 function LandingPage() {
+  function onClickEvent() {}
+
   return (
     <>
       <Header />
@@ -19,7 +21,7 @@ function LandingPage() {
           <CallList />
         </StyledContentWrapper>
       </StyledGrid>
-      <StyledPortalButton>
+      <StyledPortalButton onClick={}>
         <PhoneCallOutline color="#fafafc" width={30} height={30} />
         <PortalCall />
       </StyledPortalButton>
