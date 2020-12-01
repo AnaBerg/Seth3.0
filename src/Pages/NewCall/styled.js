@@ -35,7 +35,7 @@ export const StyledText = styled.p`
 `;
 
 export const StyledBoldText = styled.p`
-  font-family: 'Baloo Tamma 2', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
 `;
 
@@ -60,7 +60,7 @@ export const StyledFormDiv = styled.div`
 `;
 
 export const StyledBoldLabel = styled.label`
-  font-family: 'Baloo Tamma 2', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: bold;
   margin: 2px;
   margin-top: 10px;

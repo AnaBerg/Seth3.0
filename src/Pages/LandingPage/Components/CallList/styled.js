@@ -85,7 +85,7 @@ export const StyledTable = styled.table`
   padding: 5px;
   display: flex;
   flex-direction: column;
-  font-family: 'Baloo Tamma 2', cursive;
+  font-family: 'Poppins', sans-serif;
 `;
 
 export const StyledTableHeader = styled.tr`
