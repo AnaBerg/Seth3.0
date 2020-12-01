@@ -11,7 +11,7 @@ export const StyledModal = styled.div`
   background-color: transparent;
   overflow: auto;
   height: 200px;
-  margin-top: 57px;
+  margin-top: 60px;
   margin-left: 1095px;
   visibility: hidden;
 `;

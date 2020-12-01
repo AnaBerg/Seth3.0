@@ -7,6 +7,7 @@ import { StyledGrid, StyledContentWrapper, StyledPortalButton } from './styled';
 import Header from '../../Components/Header';
 import CallInfo from './Components/CallInfo';
 import CallList from './Components/CallList';
+import PortalCall from './Components/PortalCall';
 
 function LandingPage() {
   return (
@@ -20,6 +21,7 @@ function LandingPage() {
       </StyledGrid>
       <StyledPortalButton>
         <PhoneCallOutline color="#fafafc" width={30} height={30} />
+        <PortalCall />
       </StyledPortalButton>
     </>
   );

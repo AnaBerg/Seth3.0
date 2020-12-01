@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import LandingPage from './Pages/LandingPage';
 import NewCall from './Pages/NewCall';
-import LoginInfo from './Components/LoginInfo';
+import Test from './Pages/LandingPage/Components/PortalCall';
 
 function Routes() {
   return (
@@ -11,7 +11,7 @@ function Routes() {
       <Switch>
         <Route path="/" exact component={LandingPage} />
         <Route path="/novo-chamado" component={NewCall} />
-        <Route path="/test" component={LoginInfo} />
+        <Route path="/test" component={Test} />
       </Switch>
     </BrowserRouter>
   );

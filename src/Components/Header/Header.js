@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   MenuOutline,
   SearchOutline,
@@ -16,8 +16,8 @@ import {
   StyledSection,
 } from './styled';
 
-import LoginInfo from '../LoginInfo';
-import MenuDropdown from '../MenuDropdown';
+import LoginInfo from './components/LoginInfo';
+import MenuDropdown from './components/MenuDropdown';
 
 function Header() {
   return (

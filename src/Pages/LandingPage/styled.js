@@ -28,4 +28,12 @@ export const StyledPortalButton = styled.button`
   &:focus {
     background-color: #b06612;
   }
+
+  &:hover div {
+    visibility: visible;
+  }
+
+  &:focus div {
+    visibility: visible;
+  }
 `;
